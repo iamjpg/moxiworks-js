@@ -8,6 +8,6 @@ export class Foo {
   }
 
   baz() {
-    return 'this is baz!';
+    return 3;
   }
 }

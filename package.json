@@ -7,7 +7,7 @@
     "test": "mocha --recursive --compilers js:babel-core/register",
     "tdd": "npm test -- --watch",
     "dev": "webpack-dev-server --content-base build",
-    "build": "webpack"
+    "build": "webpack --progress --hide-modules --config webpack.prod.config.js"
   },
   "repository": "iamjpg/webpack-moxi-framework",
   "keywords": [
@@ -29,7 +29,6 @@
     "husky": "^0.10.1",
     "isparta": "^4.0.0",
     "mocha": "^2.3.3",
-    "rimraf": "^2.4.3",
     "webpack": "^1.12.2"
   },
   "author": {

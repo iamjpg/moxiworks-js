@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/build/",
-    filename: "main.js",
+    filename: "build.js",
     libraryTarget: 'umd'
   },
   module: {
