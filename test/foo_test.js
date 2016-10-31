@@ -1,6 +1,5 @@
 import { expect } from 'chai';
 import { Foo } from '../src/foo';
-import 'whatwg-fetch';
 
 describe('Foo.bar', () => {
   it('better be string, yo', () => {
@@ -19,6 +18,8 @@ describe('Foo.baz', () => {
 describe('Foo.fetchListingData', () => {
   it('should return an object', () => {
     const foo = new Foo;
-    expect(foo.fetchListingData()).to.be.an('object');
+    foo.fetchListingData((data) => {
+      expect(data).to.be.an('object');
+    });
   });
 });
