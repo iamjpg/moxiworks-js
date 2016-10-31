@@ -18,15 +18,14 @@
     var responses = document.querySelector('#responses');
     require(["build/moxi-jsapi-0.0.1"], function(Moxi) {
 
-      console.log(Moxi)
-
       // Playing with the Foo Object
       var foo = new Moxi.Foo;
+      var listings = new Moxi.Listing;
       var p = document.createElement("p");
       p.innerHTML = foo.bar();
       responses.appendChild(p);
 
-      foo.fetchListingData(function(res) {
+      listings.fetchListingData(function(res) {
         var p2 = document.createElement("p");
         p2.innerHTML = JSON.stringify(res);
         responses.appendChild(p2);
