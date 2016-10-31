@@ -1,3 +1,7 @@
+// So Chai understands how to test the fetch() method.
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
+
 import { expect } from 'chai';
 import { Foo } from '../src/foo';
 

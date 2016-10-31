@@ -19,11 +19,10 @@ export class Foo {
       return response.json();
     }).then(function(data) {
       if (callback) {
-        callback.call(data);
+        callback(data);
       } else {
         Promise.resolve(data);
       }
     });
   }
-
 }
