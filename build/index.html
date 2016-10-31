@@ -26,6 +26,7 @@
       p.innerHTML = foo.bar();
       responses.appendChild(p);
 
+      // Playing with the listing fetch json response.
       listings.fetchListingData(function(res) {
         var p2 = document.createElement("p");
         p2.innerHTML = JSON.stringify(res);
