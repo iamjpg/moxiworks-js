@@ -18,12 +18,3 @@ describe('Foo.baz', () => {
     expect(foo.baz()).equal(3);
   });
 });
-
-describe('Foo.fetchListingData', () => {
-  it('should return an object', () => {
-    const foo = new Foo;
-    foo.fetchListingData((data) => {
-      expect(data).to.be.an('object');
-    });
-  });
-});
