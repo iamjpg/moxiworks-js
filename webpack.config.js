@@ -1,5 +1,7 @@
 var webpack = require('webpack');
 var path = require("path");
+var PACKAGE = require('./package.json');
+var version = PACKAGE.version;
 
 module.exports = {
   entry: {
@@ -8,7 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/build/",
-    filename: "build.js",
+    filename: "moxi-jsapi-" + version + ".js",
     libraryTarget: 'umd'
   },
   module: {
