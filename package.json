@@ -1,12 +1,12 @@
 {
   "name": "webpack-moxi-framework",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/module.js",
   "scripts": {
     "test": "mocha --recursive --compilers js:babel-core/register",
     "tdd": "npm test -- --watch",
-    "dev": "webpack-dev-server --content-base build",
+    "dev": "webpack-dev-server --content-base ./",
     "build": "webpack --progress --hide-modules --config webpack.prod.config.js"
   },
   "repository": "iamjpg/webpack-moxi-framework",
