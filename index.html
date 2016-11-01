@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>AMD Testing for Moxi JS API</title>
 </head>
 
 <body>
@@ -33,12 +33,6 @@
       var buildFile = 'build/moxi-jsapi-' + json.version + '.js';
       var responses = document.querySelector('#responses');
 
-      /*
-       * NOTE: build/moxi-jsapi-0.0.1 is dynamically created by webpack. It's
-       * invisible in your file browser.
-       *
-       * Change the
-       */
       require([buildFile], function(Moxi) {
 
         // Playing with the Foo Object
