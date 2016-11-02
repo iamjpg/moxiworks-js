@@ -7,8 +7,10 @@
     "test": "mocha --recursive --compilers js:babel-core/register",
     "tdd": "npm test -- --watch",
     "dev": "webpack-dev-server --content-base ./",
-    "build": "webpack --progress --hide-modules --config webpack.prod.config.js && npm run documentation",
-    "documentation": "documentation build -f html -o docs src/*.js"
+    "build": "webpack --progress --hide-modules --config webpack.prod.config.js && npm run documentation && npm run documentation-md",
+    "documentation": "documentation build -f html -o documentation/html src/*.js",
+    "documentation-md": "documentation build -f md -o documentation/documentation.md src/*.js"
+
   },
   "repository": "iamjpg/webpack-moxi-framework",
   "keywords": [],
