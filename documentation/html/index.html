@@ -25,31 +25,73 @@
               
                 
                 <li><a
-                  href='#bar'
-                  class="">
-                  bar
-                  
+                  href='#foo'
+                  class=" toggle-sibling">
+                  Foo
+                  <span class='icon'>▸</span>
                 </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#Foo#constructor'
+                        class='regular pre-open'>
+                        #constructor
+                      </a></li>
+                      
+                      <li><a
+                        href='#Foo#bar'
+                        class='regular pre-open'>
+                        #bar
+                      </a></li>
+                      
+                      <li><a
+                        href='#Foo#baz'
+                        class='regular pre-open'>
+                        #baz
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                </div>
                 
                 </li>
               
                 
                 <li><a
-                  href='#baz'
-                  class="">
-                  baz
-                  
+                  href='#listing'
+                  class=" toggle-sibling">
+                  Listing
+                  <span class='icon'>▸</span>
                 </a>
                 
-                </li>
-              
-                
-                <li><a
-                  href='#fetchlistingdata'
-                  class="">
-                  fetchListingData
+                <div class='toggle-target display-none'>
                   
-                </a>
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#Listing#constructor'
+                        class='regular pre-open'>
+                        #constructor
+                      </a></li>
+                      
+                      <li><a
+                        href='#Listing#fetchListingData'
+                        class='regular pre-open'>
+                        #fetchListingData
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                </div>
                 
                 </li>
               
@@ -67,14 +109,113 @@
 
   
   <div class='clearfix'>
-    <h3 class='fl m0' id='bar'>
-      bar
+    <h3 class='fl m0' id='foo'>
+      Foo
     </h3>
     
   </div>
   
 
+  <p>Foo Class</p>
+
+
+  <div class='pre p1 fill-light mt0'>new Foo()</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='Foo#constructor'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>constructor([name])</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
   <p>This function returns listings based on a geographic region.</p>
+
+
+  <div class='pre p1 fill-light mt0'>constructor(name: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>](default ''))</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>](default ''))</code> any string.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='Foo#bar'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>bar([str])</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function prints a pointless string.</p>
 
 
   <div class='pre p1 fill-light mt0'>bar(str: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>](default 'bar')): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
@@ -125,21 +266,22 @@
   
 </section>
 
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='Foo#baz'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>baz([n])</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
-  <div class='clearfix'>
-    <h3 class='fl m0' id='baz'>
-      baz
-    </h3>
-    
-  </div>
-  
 
-  <p>This function returns listings based on a geographic region.</p>
+  <p>This function returns a pointless number.</p>
 
 
   <div class='pre p1 fill-light mt0'>baz(n: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>](default 3)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
@@ -190,6 +332,16 @@
   
 </section>
 
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+</section>
+
           
         
           
@@ -197,11 +349,110 @@
 
   
   <div class='clearfix'>
-    <h3 class='fl m0' id='fetchlistingdata'>
-      fetchListingData
+    <h3 class='fl m0' id='listing'>
+      Listing
     </h3>
     
   </div>
+  
+
+  <p>Listing Class</p>
+
+
+  <div class='pre p1 fill-light mt0'>new Listing()</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='Listing#constructor'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>constructor([name])</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function returns listings based on a geographic region.</p>
+
+
+  <div class='pre p1 fill-light mt0'>constructor(name: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>](default ''))</div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>](default ''))</code> any string.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='Listing#fetchListingData'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>fetchListingData(callback)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
   
 
   <p>This function returns listings based on a geographic region.</p>
@@ -249,6 +500,16 @@
   
 
   
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
 
   
 

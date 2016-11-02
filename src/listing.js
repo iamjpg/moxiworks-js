@@ -1,5 +1,14 @@
-
+/**
+ * Listing Class
+ * @class
+ * @public
+ */
 export class Listing {
+
+  /**
+   * This function returns listings based on a geographic region.
+   * @param {string} name any string.
+   */
   constructor(name='') {
     this.name = name;
   }
