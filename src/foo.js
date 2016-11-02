@@ -5,7 +5,7 @@ export class Foo {
 
   /**
    * This function returns listings based on a geographic region.
-   * @param {string} is a string.
+   * @param {string} str any string.
    * @returns {string} phrase appending string.
    */
   bar(str='bar') {
@@ -14,7 +14,7 @@ export class Foo {
 
   /**
    * This function returns listings based on a geographic region.
-   * @param {number} number to return.
+   * @param {number} n any number.
    * @returns {number} new number.
    */
   baz(n=3) {

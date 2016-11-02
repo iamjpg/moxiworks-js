@@ -6,7 +6,7 @@ export class Listing {
 
   /**
    * This function returns listings based on a geographic region.
-   * @param {callback} is a callback
+   * @param {function} callback any function.
    * @returns {object} listing data.
    */
   fetchListingData(callback) {
