@@ -53,3 +53,15 @@ This function returns listings based on a geographic region.
 -   `callback` **[function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** any function.
 
 Returns **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** listing data.
+
+# 
+
+**Examples**
+
+```javascript
+import { Listing } from 'moxi-jsapi';
+const listing = new Listing('listings');
+const listings = listing.fetchListingData((res) => {
+  return res;
+});
+```

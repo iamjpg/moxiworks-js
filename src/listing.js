@@ -27,9 +27,16 @@ export class Listing {
     }).then(function(data) {
       if (callback) {
         callback(data);
-      } else {
-        Promise.resolve(data);
       }
     });
   }
+
+  /**
+   * @example
+   * import { Listing } from 'moxi-jsapi';
+   * const listing = new Listing('listings');
+   * const listings = listing.fetchListingData((res) => {
+   *   return res;
+   * });
+   */
 }
