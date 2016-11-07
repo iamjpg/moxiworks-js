@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/build/",
-    filename: "moxi-jsapi-" + version + ".js",
+    filename: "moxiworks-js.js",
     libraryTarget: 'umd'
   },
   module: {

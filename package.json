@@ -1,6 +1,6 @@
 {
-  "name": "moxi-jsapi",
-  "version": "0.0.2",
+  "name": "moxiworks-js",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/module.js",
   "scripts": {

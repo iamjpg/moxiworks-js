@@ -1,11 +1,11 @@
-# webpack-moxi-framework
+# moxiworks-js
 
 Javascript implementation of the Moxi Works API
 
 ## Installation
 
 ```
-$ npm install --save moxi-jsapi
+$ npm install --save moxiworks-js
 ```
 
 ## Development Installation
@@ -27,4 +27,4 @@ From another terminal window run `npm run dev`.
 From terminal, run `npm run build`.
 
 ## License
-MIT © [JP Given](http://github.com/iamjpg)
+MIT ©

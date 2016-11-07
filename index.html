@@ -15,39 +15,22 @@
   <!-- AMD Client implementation testing -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.js"></script>
   <script>
-    function loadJSON(callback) {
+    var responses = document.querySelector('#responses');
 
-      var xobj = new XMLHttpRequest();
-      xobj.overrideMimeType("application/json");
-      xobj.open('GET', 'package.json', true);
-      xobj.onreadystatechange = function() {
-        if (xobj.readyState == 4 && xobj.status == "200") {
-          callback(xobj.responseText);
-        }
-      };
-      xobj.send(null);
-    }
+    require(['build/moxiworks-js.js'], function(Moxi) {
 
-    loadJSON(function(response) {
-      var json = JSON.parse(response);
-      var buildFile = 'build/moxi-jsapi-' + json.version + '.js';
-      var responses = document.querySelector('#responses');
+      // Playing with the Foo Object
+      var foo = new Moxi.Foo;
+      var listings = new Moxi.Listing;
+      var p = document.createElement("p");
+      p.innerHTML = foo.bar('passed string to foo.bar()');
+      responses.appendChild(p);
 
-      require([buildFile], function(Moxi) {
-
-        // Playing with the Foo Object
-        var foo = new Moxi.Foo;
-        var listings = new Moxi.Listing;
-        var p = document.createElement("p");
-        p.innerHTML = foo.bar('passed string to foo.bar()');
-        responses.appendChild(p);
-
-        // Playing with the listing fetch json response.
-        listings.fetchListingData(function(res) {
-          var p2 = document.createElement("p");
-          p2.innerHTML = JSON.stringify(res);
-          responses.appendChild(p2);
-        });
+      // Playing with the listing fetch json response.
+      listings.fetchListingData(function(res) {
+        var p2 = document.createElement("p");
+        p2.innerHTML = JSON.stringify(res);
+        responses.appendChild(p2);
       });
     });
   </script>
