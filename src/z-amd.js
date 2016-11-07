@@ -4,6 +4,9 @@
  *
  * Unlike CommonJS, this will need to be updated manually as Class definitions
  * are made.
+ *
+ * Down the road, if we feel AMD is worth it, we can automate the writing of
+ * this file.
  */
 if ( typeof define === "function" && define.amd ) {
   define("Moxi", [], function() {

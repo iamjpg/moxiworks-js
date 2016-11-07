@@ -39,7 +39,7 @@
         var foo = new Moxi.Foo;
         var listings = new Moxi.Listing;
         var p = document.createElement("p");
-        p.innerHTML = foo.bar();
+        p.innerHTML = foo.bar('passed string to foo.bar()');
         responses.appendChild(p);
 
         // Playing with the listing fetch json response.
