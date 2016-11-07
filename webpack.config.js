@@ -1,14 +1,15 @@
 var webpack = require('webpack');
 var path = require("path");
+var PACKAGE = require('./package.json');
+var version = PACKAGE.version;
+var glob = require('glob');
 
 module.exports = {
-  entry: {
-    app: ["./src/main.js"]
-  },
+  entry: glob.sync("./src/**/*.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/build/",
-    filename: "build.js",
+    filename: "moxiworks-js.js",
     libraryTarget: 'umd'
   },
   module: {

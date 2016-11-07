@@ -1,13 +1,16 @@
 {
-  "name": "webpack-moxi-framework",
-  "version": "1.0.0",
+  "name": "moxiworks-js",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/module.js",
   "scripts": {
     "test": "mocha --recursive --compilers js:babel-core/register",
     "tdd": "npm test -- --watch",
-    "dev": "webpack-dev-server --content-base build",
-    "build": "webpack --progress --hide-modules --config webpack.prod.config.js"
+    "dev": "webpack-dev-server --content-base ./",
+    "build": "webpack --progress --hide-modules --config webpack.prod.config.js && npm run documentation && npm run documentation-md",
+    "documentation": "documentation build -f html -o documentation/html src/*.js",
+    "documentation-md": "documentation build -f md -o documentation/documentation.md src/*.js"
+
   },
   "repository": "iamjpg/webpack-moxi-framework",
   "keywords": [],
