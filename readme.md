@@ -1,41 +1,30 @@
 # webpack-moxi-framework
-[![Build Status][travis-image]][travis-url]
-[![Coveralls Status][coveralls-image]][coveralls-url]
-[![Dependency Status][depstat-image]][depstat-url]
 
-> Description
+Javascript implementation of the Moxi Works API
 
 ## Installation
 
 ```
-$ npm install --save webpack-moxi-framework
+$ npm install --save moxi-jsapi
 ```
 
-## Usage
-```js
-var webpackMoxiFramework = require('webpack-moxi-framework');
-```
+## Development Installation
 
-## API
+1. Have installed or install NodeJS >= 6.0
+2. Fork repository and download
+3. Run `npm install`
 
-### `webpackMoxiFramework(data, [options])`
-Description
+## Development (TDD)
 
-#### Parameters
-- **Array** `data`: An array of data
-- **Object** `options`: An object containing the following fields:
+From your terminal run `npm run tdd`.
 
-#### Return
-- **Array** - Result
+## Development (Client AMD Modules)
+
+From another terminal window run `npm run dev`.
+
+## Build
+
+From terminal, run `npm run build`.
 
 ## License
 MIT © [JP Given](http://github.com/iamjpg)
-
-[travis-url]: https://travis-ci.org/iamjpg/webpack-moxi-framework
-[travis-image]: https://img.shields.io/travis/iamjpg/webpack-moxi-framework.svg?style=flat-square
-
-[coveralls-url]: https://coveralls.io/r/iamjpg/webpack-moxi-framework
-[coveralls-image]: https://img.shields.io/coveralls/iamjpg/webpack-moxi-framework.svg?style=flat-square
-
-[depstat-url]: https://david-dm.org/iamjpg/webpack-moxi-framework
-[depstat-image]: https://david-dm.org/iamjpg/webpack-moxi-framework.svg?style=flat-square
