@@ -2,7 +2,7 @@
   "name": "moxiworks-js",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/module.js",
+  "main": "dist/moxiworks-js.js",
   "scripts": {
     "test": "mocha --recursive --compilers js:babel-core/register",
     "tdd": "npm test -- --watch",

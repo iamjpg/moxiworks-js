@@ -33,7 +33,7 @@ export class Listing {
 
   /**
    * @example
-   * import { Listing } from 'moxi-jsapi';
+   * import { Listing } from 'moxiworks-js';
    * const listing = new Listing('listings');
    * const listings = listing.fetchListingData((res) => {
    *   return res;
